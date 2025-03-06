@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden; /* Evita el scroll */
+    font-family: "Nunito Sans", sans-serif;
 }
 
 /* Contenedor de la carta */
@@ -111,16 +112,6 @@ button:hover {
 }
 
 
-#cat-container {
-    position: absolute;
-    width: 100px;  /* Ajusta según el tamaño del GIF */
-    height: 100px;
-}
-
-#running-cat {
-    width: 100%; 
-    height: auto;
-}
 
 
 /* Media queries para dispositivos pequeños */
