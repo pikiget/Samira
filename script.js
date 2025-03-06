@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ease: "power2.inOut",
             onComplete: () => {
                 if (!flipped) {
-                    card.innerHTML = "Crazy, hoy es tu día, y solo quiero recordarte algo: eres una mujer muy Mulan (tiktok :v). Pero eres más que eso, eres alguien que no se deja derrumbar fácilmente, que enfrenta las cosas de frente y sabe manejar lo suyo. Sigue contagiando al mundo con tu alegría y locuras. Tus sobrinos tienen una tía extraordinaria.  💜✨";
+                    card.innerHTML = "Crazy, hoy es tu día, y solo quiero recordarte algo: eres una mujer fuerte, decidida y única. No solo eres una Mulan (tiktok :v), eres alguien que no se deja derrumbar fácilmente, que enfrenta las cosas de frente y sabe cómo salir adelante. Sigue contagiando al mundo con tu alegría y locuras. Tus sobrinos tienen una tía extraordinaria, y yo tengo la suerte de conocer a alguien tan increíble como tú. 💜✨";
                     card.classList.remove("welcome");
                     card.classList.add("final-message");
                     button.textContent = "Volver";
@@ -57,5 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Generar corazones cada 300ms
     setInterval(createHeart, 300);
 });
+
+
 
 
