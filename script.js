@@ -59,23 +59,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const catContainer = document.getElementById("cat-container");
-    const catImage = document.getElementById("running-cat");
-
-    // Asignar un GIF específico
-    catImage.src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTJ3bHVzcWJweHJ1cGRjaDdzMmJxOWtwbm0wNGF4MXRrMGhibjhrayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oQOunIN8Qju6I/giphy.gif";
-
-    catImage.onload = () => moveCat(); // Esperar a que cargue antes de moverlo
-
-    function moveCat() {
-        gsap.to(catContainer, {
-            x: Math.random() * (window.innerWidth - 150),
-            y: Math.random() * (window.innerHeight - 150),
-            duration: 3,
-            ease: "power1.inOut",
-            onComplete: moveCat
-        });
-    }
-});
-
